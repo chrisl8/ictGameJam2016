@@ -211,7 +211,6 @@ stars = game.add.tileSprite(0, 0, 100000000, 100000000, 'stars');
     pickupText.fixedToCamera = true;
 }
 function asterGen() {
-console.log('ASTEROID!!!!');
     var asteroid = asteroids.create(game.rnd.integerInRange(200, 1700), game.rnd.integerInRange(-400, 400), 'asteroid');
     game.physics.p2.enable(asteroid, false);
     asteroid.body.setCollisionGroup(asteroidCollisionGroup);
