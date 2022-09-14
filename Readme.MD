@@ -15,3 +15,7 @@ npm start dev
 
 Navigate to http://localhost:3000/
 
+# Updating
+
+Note that the copy of `phaser.min.js` used in public isn't connected to the copy installed by `npm i`, so when updating be sure to:  
+`cp node_modules/phaser-ce/build/phaser.min.js public/js`
