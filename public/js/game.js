@@ -219,7 +219,7 @@ function asterGen() {
 }
 function hitsteroid() {
     if (!hero.animations._anims.injury.isPlaying) {
-        console.log("OUCH!!!");
+        //console.log("OUCH!!!");
         hero.health--;
         healthText.text = 'Health: ' + hero.health;
         hero.animations.play('injury');
@@ -274,7 +274,7 @@ function update() {
     }
 
     if (keyboardCommands.stopRotation.justUp) {
-        console.log("I'M GETTING SICK!!!");
+        //console.log("I'M GETTING SICK!!!");
         rotate = !rotate;
     }
 
@@ -287,7 +287,7 @@ function update() {
     }
 
     if (keyboardCommands.healthCheat.justUp) {
-        console.log("I'M BATMAN!!!");
+        //console.log("I'M BATMAN!!!");
         hero.health = 99999999999999999999999999999;
         healthText.text = 'Health: ' + hero.health;
     }
@@ -354,27 +354,27 @@ function update() {
     camera.focusOnXY(hero.x, hero.y + hero.height - camera.view.halfHeight);
 
     if (keyboardCommands.levelOne.isDown) {
-        console.log("LEVEL ONE!!!");
+        //console.log("LEVEL ONE!!!");
         level = "level1";
         reload();
     }
     if (keyboardCommands.levelTwo.isDown) {
-        console.log("LEVEL TWO!!!");
+        //console.log("LEVEL TWO!!!");
         level = "level2";
         reload();
     }
     if (keyboardCommands.levelThree.isDown) {
-        console.log("LEVEL THREE!!!");
+        //console.log("LEVEL THREE!!!");
         level = "level3";
         reload();
     }
     if (keyboardCommands.levelFour.isDown) {
-        console.log("LEVEL FOUR!!!");
+        //console.log("LEVEL FOUR!!!");
         level = "level4";
         reload();
     }
     if (keyboardCommands.levelFive.isDown) {
-        console.log("LEVEL FIVE!!!");
+        //console.log("LEVEL FIVE!!!");
         level = "level5";
         reload();
     }
