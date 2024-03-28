@@ -10,7 +10,7 @@
   "author": "Chris L8",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.14.0",
+    "express": "^4.19.2",
     "phaser-ce": "^2.16.1"
   },
   "devDependencies": {
